@@ -10,10 +10,8 @@ export default {
   getUserLogged() {
     if (Cookies.get("user") != null) {
       var user = JSON.parse(Cookies.get("user"))
-      
       return user;
     }
-  
   },
   // register(email, password) {
   //   const user = { email, password };
